@@ -1,0 +1,9 @@
+model MARI_MODEL.mod;
+data MARI_DATA.dat; #Carregar os dados
+# option solver cplex;
+
+option solver cplex;
+
+solve;
+
+display v_t, tau_t, n_t, Cost, Discomfort;
